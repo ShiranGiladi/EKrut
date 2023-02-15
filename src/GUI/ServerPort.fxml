@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="368.0" prefWidth="570.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerPortFrameController">
+   <children>
+      <Label id="lblPassword" fx:id="lblPassword" layoutX="14.0" layoutY="87.0" text="Enter DB Password:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <PasswordField id="txtPassword" fx:id="txtPassword" layoutX="150.0" layoutY="82.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></PasswordField>
+      <Label layoutX="71.0" layoutY="118.0" text="Enter Port:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <TextField fx:id="portxt" layoutX="150.0" layoutY="113.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+      <Button fx:id="btnStart" layoutX="286.0" layoutY="147.0" mnemonicParsing="false" onAction="#Listen" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Start">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Button>
+      <Label layoutX="77.0" layoutY="47.0" text="Server IP:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <TextField id="txtIPServer" fx:id="txtIPServer" layoutX="149.0" layoutY="42.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+      <TableView fx:id="connectionTable" layoutX="27.0" layoutY="184.0" prefHeight="114.0" prefWidth="313.0">
+        <columns>
+          <TableColumn fx:id="ipCol" prefWidth="98.40002822875977" text="IP Address" />
+          <TableColumn fx:id="hostnameCol" minWidth="0.0" prefWidth="96.0" text="Hostname" />
+            <TableColumn fx:id="connectedStatusCol" minWidth="0.0" prefWidth="117.60002136230469" text="Connection Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnExit" layoutX="27.0" layoutY="319.0" mnemonicParsing="false" onAction="#getExitBtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Exit">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="242.0" fitWidth="181.0" layoutX="376.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pink.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="355.0" layoutY="5.0" prefHeight="108.0" prefWidth="204.0" style="-fx-text-fill: #94b5fe;" text="E-Krut" textOverrun="CLIP">
+         <font>
+            <Font name="Harlow Solid Italic" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnImportUsers" disable="true" layoutX="233.0" layoutY="319.0" mnemonicParsing="false" onAction="#ImportUsers" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Import Users">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

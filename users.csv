@@ -1,0 +1,15 @@
+id,firstName,lastName,phoneNumber,email,job,username,password,subscriberNumber,creditCard,status,note,isLogin,nameOnCard,expirationDate,cvv,numberOfpurchases,address,approveByManager,haveAccount
+25,gadi,noyman,505547745,gadi@gmail.com,Client,gadi,78777,NULL,65857451,Regular_Client,karmiel,0,gadi-noyman,2028-03-04,177,0,karmiel_ramat_23,not_approved,no
+26,micky,bernshtein,525454877,mickybernsh@gmail.com,Client,mickyb,54774,NULL,78787111,Regular_Client,haifa,0,micky-bernshtein,2029-09-09,199,0,haifa_ganim_3,not_approved,no
+27,yotam,kushnir,522158745,yoto@gmail.com,Client,yoto,89844,NULL,97777700,Regular_Client,dubai,0,yotam-kusknir,2029-08-01,712,0,dubai_benhaim_9,not_approved,no
+28,dekla,kidar,598947563,dekel@gmail.com,OperationWorker,deklala,78110,NULL,NULL,employee,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+29,alona,tal,505045451,alonit@gmail.com,DeliveriesOperator,alonit,11110,NULL,NULL,employee,north,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+30,ben,stiller,505045451,beni@gmail.com,MarketingWorker,bens,97888,NULL,NULL,employee,north,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+31,sharona,benbar,599988999,sharoni@gmail.com,ServiceRepresentative,sharona20,20111,NULL,NULL,employee,eilat,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+32,eliana,feldman,544748777,eliana@gmail.com,MarketingWorker,eli09,98880,NULL,NULL,employee,south,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+33,linoy,goldshtein,505456549,lili@gmail.com,MarketingWorker,linoy,78411,NULL,NULL,employee,north,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+34,frank,castel,589711102,pun@gmail.com,DeliveriesOperator,franki,90231,NULL,NULL,employee,south,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+35,bili,ruso,524547450,bili@gmail.com,OperationWorker,biliRuso,97710,NULL,NULL,employee,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+36,moty,luchim,568878703,moti@gmail.com,ServiceRepresentative,moty,10109,NULL,NULL,employee,abudhabi,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+37,ora,tof,522222244,ora@gmail.com,Client,ora,91012,NULL,87784114,Regular_Client,dubai,0,ora-tof,2030-02-11,900,0,dubai_gina_8,not_approved,no
+38,dayana,hamal,587788540,dayana@gmail.com,ServiceRepresentative,dayana,10177,NULL,NULL,employee,karmiel,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL
