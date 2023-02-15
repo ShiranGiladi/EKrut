@@ -7,7 +7,7 @@ EKrut (Electrical Krut) it is food services, that utilizes the OCSF java API, al
 The project was made out of 3 parts:
 1. Getting the story from the "Client" and creating UML diagrams
 2. Creating Package Diagrams, architecture design, UI\UX design and choosing the correct development method (AGILE)
-3. Hard coding the project, along side of Unit testing and Functional testing (Mockito,Jubula,JUnit frame work)
+3. Hard coding the project, along side of Unit testing and Functional testing (Jubula,JUnit frame work)
 
 This project was written using Java 1.8_321 Compiler, in a windows enviorment, The DB was stored in MySql.
 
