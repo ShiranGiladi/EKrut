@@ -1,6 +1,6 @@
 # EKrut
 
-Utilizing (TPC\IP) network protocol. It was created in my 5th semester along with 4 members.
+Utilizing (TCP\IP) network protocol. It was created in my 5th semester along with 4 members.
 
 EKrut (Electrical Krut) it is food services, that utilizes the OCSF java API, along side JavaFX, SceneBuilder, JFX and etc.
 
