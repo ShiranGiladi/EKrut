@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CollectYourOrderController">
+   <children>
+      <Button id="Exitbtn" fx:id="Exitbtn" layoutX="562.0" layoutY="20.0" mnemonicParsing="false" onAction="#getExitbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="15.0" layoutY="3.0" prefHeight="85.0" prefWidth="486.0" style="-fx-text-fill: #94b5fe;" text="Collect Your Order">
+         <font>
+            <Font name="Harlow Solid Italic" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="97.0" text="Enter Order Code:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="txtOrderCode" fx:id="txtOrderCode" layoutX="145.0" layoutY="116.0" prefHeight="26.0" prefWidth="121.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+      <Button id="okBtn" fx:id="okBtn" layoutX="273.0" layoutY="114.0" mnemonicParsing="false" onAction="#getOkBtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="OK">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Button>
+      <Button id="collectBtn" fx:id="collectBtn" layoutX="192.0" layoutY="360.0" mnemonicParsing="false" onAction="#getCollectBtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Collect">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="265.0" fitWidth="193.0" layoutX="391.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pink.png" />
+         </image>
+      </ImageView>
+      <Button id="backBtn" fx:id="backBtn" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#getBackBtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Back">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Button>
+      <ScrollPane id="scrollOrder" fx:id="scrollOrder" layoutX="82.0" layoutY="152.0" prefHeight="133.0" prefWidth="254.0">
+        <content>
+          <AnchorPane id="anchorPaneOrder" fx:id="anchorPaneOrder" minHeight="0.0" minWidth="0.0" prefHeight="146.0" prefWidth="254.0">
+               <children>
+                  <GridPane id="gridPaneOrder" fx:id="gridPaneOrder" prefHeight="174.0" prefWidth="254.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label id="labelTotalPrice" fx:id="labelTotalPrice" layoutX="113.0" layoutY="295.0" text="Total Price:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <TextField id="txtTotalPrice" fx:id="txtTotalPrice" layoutX="191.0" layoutY="291.0" prefHeight="26.0" prefWidth="73.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+      <Text id="errorMsg" fx:id="errorMsg" fill="RED" layoutX="79.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="261.3367385864258">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font></Text>
+   </children>
+</Pane>

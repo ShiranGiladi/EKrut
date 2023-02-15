@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SendExecutiveOrderController">
+   <children>
+      <Label layoutX="41.0" style="-fx-text-fill: #94b5fe;" text=" Executive Orders">
+         <font>
+            <Font name="Harlow Solid Italic" size="50.0" />
+         </font>
+      </Label>
+      <Button id="Exitbtn" fx:id="Exitbtn" layoutX="560.0" layoutY="18.0" mnemonicParsing="false" onAction="#getExitbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView id="tableProdutUnderTreshold" fx:id="tableProdutUnderTreshold" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="499.0">
+        <columns>
+          <TableColumn id="productID" fx:id="productID" prefWidth="75.20001602172852" text="Product ID" />
+          <TableColumn id="productName" fx:id="productName" prefWidth="129.60003662109375" text="Product Name" />
+            <TableColumn id="facility" fx:id="facility" prefWidth="115.19999694824219" text="Facility" />
+            <TableColumn id="amount" fx:id="amount" prefWidth="64.800048828125" text="Amount" />
+            <TableColumn id="thresholdLevel" fx:id="thresholdLevel" prefWidth="109.5999755859375" text="Threshold Level" />
+        </columns>
+      </TableView>
+      <Button id="Backbtn" fx:id="Backbtn" layoutX="16.0" layoutY="360.0" mnemonicParsing="false" onAction="#getBackbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Back">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Button>
+      <Button id="sendBtn" fx:id="sendBtn" layoutX="534.0" layoutY="360.0" mnemonicParsing="false" onAction="#getSendBtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Send">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox id="selectEmployeeComboBox" fx:id="selectEmployeeComboBox" layoutX="341.0" layoutY="316.0" onAction="#getComboBox" prefWidth="150.0" />
+      <Label layoutX="50.0" layoutY="320.0" text="Select to which employee to send the order:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="errorMsg" fill="RED" layoutX="134.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="323.60003662109375">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

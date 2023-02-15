@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentController">
+   <children>
+      <Label layoutX="32.0" layoutY="-7.0" style="-fx-text-fill: #94b5fe;" text="Payment">
+         <font>
+            <Font name="Harlow Solid Italic" size="50.0" />
+         </font>
+      </Label>
+      <Button id="Backbtn" fx:id="Backbtn" layoutX="21.0" layoutY="360.0" mnemonicParsing="false" onAction="#getBackbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Back">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Button>
+      <TabPane layoutX="32.0" layoutY="91.0" prefHeight="259.0" prefWidth="472.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Pay WIth Credit Card">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="241.0" prefWidth="472.0" style="-fx-border-color: #122753;">
+                     <children>
+                        <Label layoutX="37.0" layoutY="15.0" text="Name on card:">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="47.0" text="Card number:">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="77.0" text="Expiry date:">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="107.0" text="Security code:">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField id="txtNameOnCard" fx:id="txtNameOnCard" layoutX="145.0" layoutY="11.0" prefHeight="26.0" prefWidth="191.0">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField id="txtCardNum" fx:id="txtCardNum" layoutX="145.0" layoutY="42.0" prefHeight="26.0" prefWidth="191.0">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox id="Month" fx:id="Month" layoutX="145.0" layoutY="72.0" onAction="#getMonth" prefHeight="26.0" prefWidth="111.0" />
+                        <ComboBox id="Year" fx:id="Year" layoutX="261.0" layoutY="72.0" onAction="#getYear" prefHeight="25.0" prefWidth="75.0" />
+                        <TextField id="txtCVV" fx:id="txtCVV" layoutX="144.0" layoutY="102.0" prefHeight="25.0" prefWidth="97.0">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button id="PayNowtbn" fx:id="PayNowtbn" layoutX="205.0" layoutY="139.0" mnemonicParsing="false" onAction="#getPayNowtbn" style="-fx-background-color: #94b5fe;" text="Pay Now">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="26.0" fitWidth="64.0" layoutX="343.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Cards.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="txtErrorMsg1" fill="RED" layoutX="94.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="284.53680419921875">
+                           <font>
+                              <Font name="Rockwell" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="11.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* You can pay with a diferent credit card.">
+                           <font>
+                              <Font name="Rockwell" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Pay With E-Krut App">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="314.0" style="-fx-border-color: #122753;">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Alert.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="55.0" layoutY="30.0" text="This option available only for registered clients.">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="62.0" text="Please connect to your account on the E-Krut app to continue.">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button id="PayEKT" fx:id="PayEKT" layoutX="180.0" layoutY="106.0" mnemonicParsing="false" onAction="#getPayEKT" style="-fx-background-color: #94b5fe;" text="Pay Now">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Button>
+                        <Text id="errorMsg" fx:id="txtErrorMsg2" fill="RED" layoutX="71.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="276.79998779296875">
+                           <font>
+                              <Font name="Rockwell" size="13.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Deferred Payment">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-border-color: #122753;">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Alert.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="55.0" layoutY="30.0" text="This option available only for registered clients.">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button id="MakePaymentbtn" fx:id="MakePaymentbtn" layoutX="152.0" layoutY="85.0" mnemonicParsing="false" onAction="#getMakePaymentbtn" style="-fx-background-color: #94b5fe;" text="Make Payment">
+                           <font>
+                              <Font name="Rockwell" size="14.0" />
+                           </font>
+                        </Button>
+                        <Text id="errorMsg" fx:id="txtErrorMsg3" fill="RED" layoutX="47.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="324.0">
+                           <font>
+                              <Font name="Rockwell" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="Exitbtn" fx:id="Exitbtn" layoutX="562.0" layoutY="14.0" mnemonicParsing="false" onAction="#getExitbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

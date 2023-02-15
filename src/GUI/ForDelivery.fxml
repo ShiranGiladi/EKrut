@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ForDeliveryController">
+   <children>
+      <Label layoutX="70.0" style="-fx-text-fill: #94b5fe;" text="For Delivery">
+         <font>
+            <Font name="Harlow Solid Italic" size="50.0" />
+         </font>
+      </Label>
+      <Button id="Backbtn" fx:id="Backbtn" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#getBackbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Back">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Button>
+      <Button id="GotoMenubtn" fx:id="GotoMenubtn" layoutX="490.0" layoutY="362.0" mnemonicParsing="false" onAction="#getGotoMenubtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Go to Menu">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="55.0" layoutY="149.0" text="* Address:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="183.0" text="* City:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="218.0" text="Floor number:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="218.0" text="Apt. Number:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="txtAddress" fx:id="txtAddress" layoutX="154.0" layoutY="143.0" prefHeight="26.0" prefWidth="195.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="txtCity" fx:id="txtCity" layoutX="154.0" layoutY="175.0" prefHeight="26.0" prefWidth="195.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="txtAptNum" fx:id="txtAptNum" layoutX="303.0" layoutY="213.0" prefHeight="25.0" prefWidth="45.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="txtFloorNum" fx:id="txtFloorNum" layoutX="154.0" layoutY="213.0" prefHeight="25.0" prefWidth="45.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="253.0" fitWidth="172.0" layoutX="406.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/yellow.png" />
+         </image>
+      </ImageView>
+      <Text fill="RED" layoutX="97.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Mandatory Fields">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="errorMsg" layoutX="56.0" layoutY="308.0" prefHeight="16.0" prefWidth="295.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Button id="Exitbtn" fx:id="Exitbtn" layoutX="560.0" layoutY="14.0" mnemonicParsing="false" onAction="#getExitbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="55.0" layoutY="113.0" text="* Select Area:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="selectAreaComboBox" fx:id="selectAreaComboBox" layoutX="154.0" layoutY="109.0" onAction="#getSelectAreaComboBox" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="97.0" layoutY="344.0" text="* You can change the given address." textFill="RED">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="264.0" text="* Phone Number:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <TextField id="txtPhoneNumber" fx:id="txtPhoneNumber" layoutX="180.0" layoutY="258.0" prefHeight="26.0" prefWidth="169.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+   </children>
+</Pane>

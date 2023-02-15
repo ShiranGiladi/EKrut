@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DistantClientController">
+   <children>
+      <Button id="Exitbtn" fx:id="Exitbtn" layoutX="563.0" layoutY="20.0" mnemonicParsing="false" onAction="#getExitbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="PickUpLaterbtn" fx:id="PickUpLaterbtn" layoutX="39.0" layoutY="189.0" mnemonicParsing="false" onAction="#getPickUpLaterbtn" prefHeight="36.0" prefWidth="149.0" style="-fx-background-color: #94b5fe;" text="Pick Up Later">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font></Button>
+      <Button id="ForDeliverybtn" fx:id="ForDeliverybtn" layoutX="195.0" layoutY="189.0" mnemonicParsing="false" onAction="#getForDeliverybtn" prefHeight="37.0" prefWidth="149.0" style="-fx-background-color: #94b5fe;" text="For Delivery">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font></Button>
+      <Button id="Logoutbtn" fx:id="Logoutbtn" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#getLogoutbtn" style="-fx-background-color: #122753; -fx-text-fill: #ffffff;" text="Logout">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Button>
+      <Label layoutX="29.0" layoutY="-4.0" prefHeight="85.0" prefWidth="409.0" style="-fx-text-fill: #94b5fe;" text="Choose Order Type">
+         <font>
+            <Font name="Harlow Solid Italic" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="116.0" text="Client Name:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="151.0" text="Client Status:">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="txtName" fx:id="txtName" editable="false" layoutX="171.0" layoutY="111.0" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </TextField>
+      <TextField id="txtStatus" fx:id="txtStatus" editable="false" layoutX="171.0" layoutY="146.0" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="313.0" fitWidth="222.0" layoutX="376.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pink.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="discountMsg" fill="#3f7cff" layoutX="22.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="346.13677978515625">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorMsg" fill="RED" layoutX="108.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="250.13677978515625">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Text>
+      <Button id="approveYourDeliveryBtn" fx:id="approveYourDeliveryBtn" layoutX="89.0" layoutY="232.0" mnemonicParsing="false" onAction="#getApproveYourDeliveryBtn" prefHeight="37.0" prefWidth="199.0" style="-fx-background-color: #94b5fe;" text="Approve Your Delivery">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
