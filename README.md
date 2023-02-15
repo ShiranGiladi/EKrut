@@ -25,3 +25,5 @@ There are several "Users" in the system:
 8.Operation Worker
 
 All of them have different functionalities, all according to the clients story.
+
+**I divided the project here to 2 branch: client and server
